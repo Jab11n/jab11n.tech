@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Redirecting - Jab11n's Website</title>
+        <style>
+            body {
+                background-color: #100e24;
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-family: sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>You're leaving Jab11n.tech</h1>
+        <p>You will be redirected shortly.</p>
+        <p>
+            What's this? This is a placeholder page which is in place of
+            something I have planned to make later, a custom link shortener with
+            privacy respecting analytics. For now, the redirecting is done
+            manually and I don't get any little data bites about what gets
+            clicked.
+        </p>
+
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const destination = urlParams.get("id");
+
+            if (destination === "github") {
+                window.location.href = "https://github.com/jab11n";
+            } else if (destination === "discord") {
+                window.location.href =
+                    "https://discord.com/users/964614935298588692";
+            } else if (destination === "youtube") {
+                window.location.href = "https://youtube.com/@jab11n";
+            } else if (destination === "x") {
+                window.location.href = "https://x.com/jab11n";
+            } else if (destination === "bsky") {
+                window.location.href = "https://bsky.app/profile/jab11n.tech";
+            } else if (destination === "scratch") {
+                window.location.href = "https://scratch.mit.edu/users/-gr";
+            } else if (destination === "hatch") {
+                window.location.href = "https://dev.hatch.lol/user?u=-gr";
+            } else if (destination === "wasteof") {
+                window.location.href = "https://wasteof.money/users/-gr";
+            }
+        </script>
+    </body>
+</html>
